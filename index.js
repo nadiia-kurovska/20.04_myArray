@@ -32,17 +32,24 @@ class MyArray{
     }
 
     unshift(newElem) {
-        let i = this[0]
-        this[i] = this[i++];//not working yet
+        // let i = this[0]
+        // i = this[i++];//not working yet
         this[0] = newElem;
         this.length++;
         return this.length;
     }
 
-    forEach(addOne){
-        const addOne = function {
-            
+    forEach(){
+        for(num of arr){
+
         }
+    }
+
+    isMyArray(arr){
+        if (arr instanceof MyArray){
+            return arr
+        }
+        return undefined
     }
 
 }
