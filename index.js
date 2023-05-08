@@ -39,9 +39,10 @@ class MyArray{
         return this.length;
     }
 
-    forEach(){
-        for(num of arr){
-
+    forEach(arr){
+        function addOne(){
+            for(num of arr){
+                num += 1;
         }
     }
 
